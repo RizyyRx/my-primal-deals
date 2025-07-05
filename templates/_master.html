@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include "_head.html" %}
+
+    {% if session.authenticated %}
+        {% include "home.html" %}
+        {% else %}
+        {% include "_login.html" %}
+    {% endif %}
+</html>
