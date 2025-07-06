@@ -14,7 +14,7 @@ def register():
 
       try:
          uid = User.register(username,password,password,name,email)
-         return redirect(url_for('home.dashboard'))
+         return redirect(url_for('home.home'))
       except Exception as e:
          return{
             "message": str(e),
@@ -54,7 +54,7 @@ def auth():
             session['sessid'] = sessid # put sessid, created when registering session in flask's session object. It will be used to reconstruct the session instance using id and check if its valid, if authenticated is True
             session['type'] = 'web' # if user authenticated thru web, set this variable
 
-            return redirect(url_for('home.dashboard')) # redirect to dashboard if login is successful
+            return redirect(url_for('home.home')) # redirect to dashboard if login is successful
          except Exception as e:
             return{
                "message":str(e),
@@ -75,4 +75,4 @@ def deauth():
    #    "message":"successfully deauthed",
    #    "authenticated":False
    # }, 200
-   return redirect(url_for('home.dashboard'))
+   return redirect(url_for('home.home'))

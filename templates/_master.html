@@ -3,7 +3,15 @@
     {% include "_head.html" %}
 
     {% if session.authenticated %}
-        {% include "home.html" %}
+        <body id="page-top"  class="d-flex flex-column min-vh-100"> 
+            {% include "_header.html" %}
+
+            {% block main %} {% endblock %}
+
+            {% include "_footer.html" %}
+            {% include "_js.html" %}
+        </body>
+        
         {% else %}
         {% include "_login.html" %}
     {% endif %}
