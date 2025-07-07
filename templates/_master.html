@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% include "_head.html" %}
+{% include "_head.html" %}
 
-    {% if session.authenticated %}
-        <body id="page-top"  class="d-flex flex-column min-vh-100"> 
+<body id="page-top" class="d-flex flex-column min-vh-100 body body--primary home">
+    <div class="page-wrapper">
+        <div class="content">
+
             {% include "_header.html" %}
 
             {% block main %} {% endblock %}
+        </div>
+        {% include "_footer.html" %}
+    </div>
 
-            {% include "_footer.html" %}
-            {% include "_js.html" %}
-        </body>
-        
-        {% else %}
-        {% include "_login.html" %}
-    {% endif %}
+
+    {% include "_js.html" %}
+</body>
 </html>

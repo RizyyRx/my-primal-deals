@@ -1,0 +1,92 @@
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/Inter_24pt-Regular.ttf);
+}
+@font-face {
+  font-family: InterBold;
+  src: url(../fonts/Inter_28pt-Bold.ttf);
+}
+:root {
+  --primary-color: #ff7b54;
+  --secondary-color: #fff;
+  --ternary-color: #000;
+  --button-primary-bg-color: var(--secondary-color);
+  --button-secondary-bg-color: var(--primary-color);
+  --button-primary-text-color: var(--primary-color);
+  --button-secondary-text-color: var(--secondary-color);
+  
+  --font-family: "Inter", sans-serif;
+  --font-family-bold: "InterBold", sans-serif;
+  --font-size: 16px;
+}
+
+/* Generic styles **/
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+    list-style: none;   
+    margin: 0;
+    padding: 0; 
+}
+p, h1 {
+    margin: 0;
+    padding: 0;
+}
+.body {
+  font-family: var(--font-family);
+}
+.body--primary {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+.body--secondary {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+/*Locating the fill in svg using path */
+.body--secondary svg path {
+  fill: var(--primary-color);
+}
+.main {
+  padding: 150px;
+}
+/* header/nav styles **/
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 34px;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo nav image";
+  align-items: center;
+  padding: 0 60px;
+  margin-top: 20px;
+}
+
+.header__logo {
+  grid-area: logo;
+  font-family: var(--font-family-bold);
+  font-size: 40px;
+}
+.nav {
+  grid-area: nav;
+  justify-self: end;
+}
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav__list--item {
+  font-size: 26px;
+  margin-inline-end: 36px;
+}
+/* element styles **/
+.button  {
+    border: 4px solid var(--secondary-color);
+    padding: 0rem 64px;
+    font-size: 1.5rem;
+    font-family: InterBold, sans-serif;
+    height: 100px;
+    cursor: pointer;
+}

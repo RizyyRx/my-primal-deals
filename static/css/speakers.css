@@ -1,0 +1,41 @@
+@import 'base.css';
+
+.speakers .title {
+    font-family: var(--font-family-bold);
+    font-size: 98px;
+    margin-bottom: 50px;
+}
+
+.speakers__display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px;
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    align-items: center;
+    justify-content: flex-start;
+}
+.speaker__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: var(--ternary-color);
+}
+.speaker__wrapper .speaker__image {
+    width: 310px;
+    height: 310px;
+}
+.speaker__wrapper .speaker__name {
+    font-family: var(--font-family-bold);
+    font-size: 32px;
+    color: var(--primary-color);
+    margin: 36px 0px 20px;
+}
+.speaker__wrapper .speaker__company {
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+.speaker__wrapper .speaker__description {
+    line-height: 1.2;
+}
