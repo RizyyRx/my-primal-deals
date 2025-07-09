@@ -22,3 +22,7 @@ def contact():
 @bp.route('/signup')
 def signup():
    return render_template('_signup.html') 
+
+@bp.route('/stories')
+def stories():
+   return render_template('stories.html') 

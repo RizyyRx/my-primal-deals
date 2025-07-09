@@ -1,0 +1,101 @@
+<!doctype html>
+<html ⚡>
+
+<head>
+  <meta charset="utf-8">
+  <title>My AMP Story</title>
+  <link rel="canonical" href="/">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+  <style amp-boilerplate>
+    body {
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style>
+  <noscript>
+    <style amp-boilerplate>
+      body {
+        animation: none
+      }
+    </style>
+  </noscript>
+
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+
+  <style amp-custom>
+    amp-story {
+      font-family: sans-serif;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <amp-story standalone title="What is My Primal?" publisher="My Primal" publisher-logo-src="/static/img/logo.png"
+    poster-portrait-src="/static/img/poster.jpg">
+
+    <!-- Page 1: Who We Are -->
+    <amp-story-page id="who-we-are">
+      <amp-story-grid-layer template="fill">
+        <amp-img src="/static/img/b1.jpg" width="720" height="1280" layout="responsive"></amp-img>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical">
+        <h1>Who We Are</h1>
+        <p>As fresh graduates 🎓, we came up with an idea that helps millions during their online product chase. We make
+          it right.</p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <!-- Page 2: What is My Primal -->
+    <amp-story-page id="what-is-my-primal">
+      <amp-story-grid-layer template="fill">
+        <amp-img src="/static/img/b2.jpg" width="720" height="1280" layout="responsive"></amp-img>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical">
+        <h1>What is My Primal?</h1>
+        <p>We create content that helps people make smarter buying decisions. We're building advanced features like
+          price tracking.</p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <!-- Page 3: Coming Soon -->
+    <amp-story-page id="coming-soon">
+      <amp-story-grid-layer template="fill">
+        <amp-img src="/static/img/b3.jpg" width="720" height="1280" layout="responsive"></amp-img>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical">
+        <h1>More to Come</h1>
+        <p>We're just getting started. Stay tuned for more powerful tools from My Primal.</p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <amp-story-page id="who-we-are">
+      <!-- Background video layer -->
+      <amp-story-grid-layer template="fill">
+        <amp-video autoplay loop layout="responsive" width="720" height="1280" poster="/static/img/poster1.jpg">
+          <source src="/static/img/vid.mp4" type="video/mp4">
+        </amp-video>
+      </amp-story-grid-layer>
+
+      <!-- Text layer -->
+      <amp-story-grid-layer template="vertical">
+        <h1>FBI Breaks door</h1>
+        <p>yep</p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+  </amp-story>
+</body>
+
+</html>

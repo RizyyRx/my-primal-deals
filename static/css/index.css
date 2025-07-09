@@ -9,6 +9,7 @@
 .home .main__heading {
   font-size: 128px;
   font-weight: 700;
+  color: var(--primary-color);
 }
 .home .main__subheading {
   font-size: 40px;

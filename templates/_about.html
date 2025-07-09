@@ -1,13 +1,19 @@
 {% extends "_master.html" %}
 
 {% block main %}
-<!-- About-->
-  <section id="about">
-    <div class="container">
-      <div class="text-center">
-        <h2 class="section-heading text-uppercase">About</h2>
-        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-      </div>
-    </div>
+<main class="about">
+  <section class="about__section">
+    <h1 class="about__title">Who We Are 🎓</h1>
+    <p class="about__text">
+      As fresh graduates, we came up with an idea that helps millions during their online chase for the right product. We aim to make it right.
+    </p>
   </section>
-  {% endblock %}  
+
+  <section class="about__section">
+    <h1 class="about__title">What is My Primal Actually?</h1>
+    <p class="about__text">
+      We create content that helps people make better decisions. With advanced features like price tracking (currently in progress), we empower smarter online shopping.
+    </p>
+  </section>
+</main>
+{% endblock %}

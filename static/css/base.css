@@ -7,9 +7,9 @@
   src: url(../fonts/Inter_28pt-Bold.ttf);
 }
 :root {
-  --primary-color: #ff7b54;
-  --secondary-color: #fff;
-  --ternary-color: #000;
+  --primary-color:  #99f2da;
+  --secondary-color:  #1d1c1c;
+  --ternary-color: #ffffff;
   --button-primary-bg-color: var(--secondary-color);
   --button-secondary-bg-color: var(--primary-color);
   --button-primary-text-color: var(--primary-color);
@@ -44,7 +44,7 @@ p, h1 {
 }
 .body--secondary {
   background-color: var(--secondary-color);
-  color: var(--primary-color);
+  color: var(--ternary-color);
 }
 /*Locating the fill in svg using path */
 .body--secondary svg path {
@@ -55,13 +55,24 @@ p, h1 {
 }
 /* header/nav styles **/
 .header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 34px;
-  grid-template-rows: 1fr;
-  grid-template-areas: "logo nav image";
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 60px;
-  margin-top: 20px;
+  padding: 0 40px; /* horizontal spacing inside header */
+  height: 80px;
+
+  background-color: #111;  /* near black */
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+    /* Add shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color:  #222222; /* ensure it's not transparent */
+  z-index: 1000;
 }
 
 .header__logo {
@@ -76,11 +87,22 @@ p, h1 {
 .nav__list {
   display: flex;
   flex-wrap: wrap;
+  padding-right: 40px;
 }
 .nav__list--item {
   font-size: 26px;
   margin-inline-end: 36px;
 }
+
+/* Hover effect for nav items */
+.nav__list--item:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 8px;
+  padding: 4px 8px;
+  transition: 0.3s;
+}
+
 /* element styles **/
 .button  {
     border: 4px solid var(--secondary-color);
@@ -89,4 +111,12 @@ p, h1 {
     font-family: InterBold, sans-serif;
     height: 100px;
     cursor: pointer;
+}
+
+/* Hover effect for primary button */
+.button--primary:hover,
+.button--secondary:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: 0.3s;
 }
