@@ -1,24 +1,130 @@
-.about {
-  padding: 60px 20px;
+.about-hero {
+  text-align: center;
+  padding: 150px 20px 100px;
   max-width: 900px;
   margin: 0 auto;
-  font-family: var(--font-family);
-  color: var(--secondary-color);
 }
 
-.about__section {
-  margin-bottom: 40px;
-}
-
-.about__title {
-  font-size: 36px;
-  font-family: var(--font-family-bold);
-  margin-bottom: 16px;
+.badge {
+  display: inline-block;
+  background: white;
   color: #000;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
-.about__text {
+.about-heading {
+  font-size: 82px;
+  font-family: var(--font-family-bold);
+  color: var(--ternary-color);
+  margin-bottom: 20px;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #4b6cb7, #945dd6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-subtext {
   font-size: 18px;
   line-height: 1.6;
+  color: var(--ternary-color);
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 32px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-gradient {
+  background: linear-gradient(to right, #4b6cb7, #945dd6);
+  color: white;
+  border: none;
+}
+
+.btn-white {
+  background: white;
   color: #000;
+  border: 1px solid #ddd;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.about-feature {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feature-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.feature-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.feature-content {
+  flex: 1 1 55%;
+}
+
+.feature-title {
+  font-size: 32px;
+  font-family: var(--font-family-bold);
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
+
+.feature-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--ternary-color);
+}
+
+.cta {
+  background: #000;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cta a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
 }

@@ -26,3 +26,7 @@ def signup():
 @bp.route('/stories')
 def stories():
    return render_template('stories.html') 
+
+@bp.route('/blogs')
+def blogs():
+   return render_template('blogs.html') 

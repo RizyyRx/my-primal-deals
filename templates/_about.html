@@ -1,19 +1,51 @@
 {% extends "_master.html" %}
 
 {% block main %}
-<main class="about">
-  <section class="about__section">
-    <h1 class="about__title">Who We Are 🎓</h1>
-    <p class="about__text">
-      As fresh graduates, we came up with an idea that helps millions during their online chase for the right product. We aim to make it right.
-    </p>
+<main class="about-hero">
+  <div class="badge">🏆 A Smarter Shopping Experience</div>
+
+  <h1 class="about-heading">
+    Learn About <span class="highlight">My Primal Deals.</span>
+  </h1>
+
+  <p class="about-subtext">
+    Your trusted source for best deals, viral finds and discount hacks that actually work.
+  </p>
+
+  <div class="about-buttons">
+    <a href="/blogs" class="btn btn-gradient">Explore Deals</a>
+    <a href="/contact" class="btn btn-white">Contact Us →</a>
+  </div>
+
+  <section class="about-feature">
+    <div class="feature-image">
+      <img src="/static/img/about-idea.png" alt="Idea Behind My Primal">
+    </div>
+    <div class="feature-content">
+      <h2 class="feature-title">🎯Our Mission</h2>
+      <p class="feature-text">
+        To empower users with smarter online shopping strategies through real reviews, daily content, and the best-value
+        products across the web.
+      </p>
+    </div>
   </section>
 
-  <section class="about__section">
-    <h1 class="about__title">What is My Primal Actually?</h1>
-    <p class="about__text">
-      We create content that helps people make better decisions. With advanced features like price tracking (currently in progress), we empower smarter online shopping.
-    </p>
+  <section class="about-feature">
+    <div class="feature-content">
+      <h2 class="feature-title">🌟 Our Vision</h2>
+      <p class="feature-text">
+        To build India's most trusted platform for lifestyle hacks, curated deals, and community-driven recommendations—helping users save more and shop better every day.
+      </p>
+    </div>
+    <div class="feature-image">
+      <img src="/static/img/about-idea.png" alt="Idea Behind My Primal">
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Join the Tribe of Smart Shoppers</h2>
+    <p>Be part of a growing community that gets deal alerts, shopping hacks, and early access to viral drops.</p>
+    <a href="#">Subscribe Now</a>
   </section>
 </main>
 {% endblock %}

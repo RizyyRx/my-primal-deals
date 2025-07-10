@@ -1,0 +1,67 @@
+.blogs {
+  padding: 100px 20px 60px; /* top padding to avoid header */
+  max-width: 900px;
+  margin: 0 auto;
+  color: var(--ternary-color);
+  font-family: var(--font-family);
+}
+
+.blogs h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: var(--font-family-bold);
+  color: var(--primary-color);
+}
+
+.blogs h2 {
+  font-size: 24px;
+  font-family: var(--font-family-bold);
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.blogs p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ternary-color);
+  margin-bottom: 16px;
+}
+
+.deal {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid var(--primary-color);
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 6px 0 12px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: var(--font-family-bold);
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--ternary-color);
+  color: var(--secondary-color);
+}
+
+.tip {
+  margin-top: 40px;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--primary-color);
+}
